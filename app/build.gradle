@@ -72,4 +72,5 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-firestore'
 
+    implementation 'org.mongodb:mongodb-driver-sync:4.9.1'
 }
