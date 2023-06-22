@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "618486790125",
+    "project_id": "ncuziyouemath-c9f26",
+    "storage_bucket": "ncuziyouemath-c9f26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618486790125:android:1b4a28ffb22849ab0c99e4",
+        "android_client_info": {
+          "package_name": "b.m.ziyoumathstudent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618486790125-8foue5gk3iiddd97d2sd573o6pj4vadg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGGXmk9ZYDK3qaYJLU7teTHPofWude1SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618486790125-8foue5gk3iiddd97d2sd573o6pj4vadg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618486790125:android:f0c31407c4a233130c99e4",
+        "android_client_info": {
+          "package_name": "b.m.ziyoumathteacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618486790125-h9874qhdr8l5s2nrmrtp7bnsha7j7gv2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "b.m.ziyoumathteacher",
+            "certificate_hash": "ddc609db40eb0627dc27be0092aefa409634e519"
+          }
+        },
+        {
+          "client_id": "618486790125-8foue5gk3iiddd97d2sd573o6pj4vadg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGGXmk9ZYDK3qaYJLU7teTHPofWude1SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618486790125-8foue5gk3iiddd97d2sd573o6pj4vadg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

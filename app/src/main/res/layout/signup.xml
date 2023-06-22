@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Signup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bg"
+    android:orientation="horizontal"
+    tools:context=".Signup">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toTopOf="@+id/Signup_layout"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/status2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="status2"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nameTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <!--輔助線-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/G14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/G25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/G36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <!--帳號密碼的輔助線-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GAP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <LinearLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTop">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="6">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/schoolid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="學校代碼(6位數)"
+                android:imeActionLabel="確認"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform"
+                tools:ignore="MissingConstraints" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout_studentname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/studentname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="請輸入姓名"
+                android:imeActionLabel="確認"
+                android:singleLine="true"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform"
+                tools:ignore="MissingConstraints" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/studentid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="學號"
+                android:imeActionLabel="確認"
+                android:inputType="number"
+                android:singleLine="true"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform"
+                tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/grade"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:entries="@array/Grade"
+                android:gravity="center"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="年級"
+                android:visibility="visible"
+                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                app:autoSizeTextType="uniform" />
+            <!--
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/team"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="班級"
+                                android:imeActionLabel="確認"
+                                android:inputType="text"
+                                android:maxLength="2"
+                                android:singleLine="true"
+                                app:autoSizePresetSizes="@array/autosize_text_sizes"
+                                app:autoSizeTextType="uniform"
+                                tools:ignore="MissingConstraints" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="班"
+                            android:visibility="visible"
+                            app:autoSizePresetSizes="@array/autosize_text_sizes"
+                            app:autoSizeTextType="uniform" /-->
+        </LinearLayout>
+
+        <!--
+        <ListView
+            android:id="@+id/zzzzz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/about_schoolid" /-->
+        <Spinner
+            android:id="@+id/clist"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:prompt="@string/checkinfo" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/orange_button"
+        android:text="確認年級"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintLeft_toLeftOf="@id/G14"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/orange_button"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="註冊"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintRight_toLeftOf="@id/G36"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">子由數學學生版</string>
+    <string name="signup">註冊</string>
+    <string name="signin">登入</string>
+    <string name="signout">登出</string>
+    <string name="setting">設定</string>
+    <string name="teamrace">競賽模式</string>
+    <string name="personalrace">個人競賽</string>
+    <string name="homework">回家作業</string>
+    <string name="save">結果儲存</string>
+    <string name="record">答題記錄</string>
+    <string name="chooseteam">請選擇組別</string>
+    <string name="startrace">開始競賽</string>
+    <string name="teamA">A</string>
+    <string name="teamB">B</string>
+    <string name="teamC">C</string>
+    <string name="teamD">D</string>
+    <string name="gameroomid">確認編號</string>
+    <string name="countdown">計時器</string>
+    <string name="teamscore">各組積分</string>
+    <string name="send">傳送</string>
+    <string name="finish">結束競賽</string>
+    <string name="BackToMain">回首頁</string>
+    <string name="Notaccept">尚未接收</string>
+    <string name="sendAns">傳送作業</string>
+    <string name="accounting">計算紙</string>
+    <string name="score">分數</string>
+    <string name="correct">正確答案為:</string>
+    <string name="savetime">儲存時間</string>
+    <string name="mode">作答形式</string>
+    <string name="tpname">試題名稱</string>
+    <string name="school">學校</string>
+    <string name="ClAss">班級</string>
+    <string name="studenid">學號</string>
+    <string name="in">確定</string>
+    <string name="isnull">-</string>
+    <string name="checkinfo">請先按下確認</string>
+
+    <string name="about_schoolid"> 學校代碼 即 教育部 統計處 \n各級學校名錄 之\n學校代碼</string>
+    <string name="Back">返回</string>
+    <string name="problem_menu">題目總覽</string>
+    <string name="hwrecord">作業紀錄</string>
+    <string name="NetWork_NA">沒有網路</string>
+
+    <!-- Array -->
+    <string-array name="Grade">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+</resources>

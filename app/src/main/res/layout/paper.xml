@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Paper">
+
+    <com.king.drawboard.view.DrawBoardView
+        android:id="@+id/DrawBoard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77FFFFFF"
+        app:dbvZoomEnabled="false"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guildeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guildeline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guildeline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guildeline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guildeline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guildeline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <!--app:layout_constraintVertical_bias="0.9"-->
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/guildeline2"
+        app:layout_constraintBottom_toBottomOf="@+id/guildeline1"
+        app:layout_constraintLeft_toLeftOf="@+id/guildeline3"
+        app:layout_constraintRight_toRightOf="@+id/guildeline4"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+
+        <ImageButton
+            android:layout_weight="2"
+            android:src="@drawable/clear"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <RadioGroup
+            android:id="@+id/pencolorgroup"
+            android:background="#0000"
+            android:layout_weight="3"
+            android:weightSum="4"
+            app:layout_constraintVertical_bias="0.1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <RadioButton
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@drawable/black_pen"
+                android:id="@+id/black_pen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:button="@null"
+                android:layout_weight="1"
+                android:background="@drawable/red_pen"
+                android:id="@+id/red_pen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:button="@null"
+                android:layout_weight="1"
+                android:background="@drawable/blue_pen"
+                android:id="@+id/blue_pen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@drawable/eraser"
+                android:adjustViewBounds="true"
+                android:id="@+id/eraser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+        <ImageButton
+            android:layout_weight="2"
+            android:id="@+id/back"
+            android:src="@drawable/btn_me_back"
+            android:background="#0F00"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="@+id/guildeline2"
+            app:layout_constraintBottom_toBottomOf="@+id/guildeline0"
+            app:layout_constraintLeft_toLeftOf="@+id/guildeline4"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

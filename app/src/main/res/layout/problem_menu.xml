@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dohw_bg"
+    tools:context=".ProblemMenu">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TheTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/SecondTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ThirdTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ForthTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/FifthTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/SixthTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/SeventhTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EighthTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86456907" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/NinethTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TenthTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TheLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/SecondLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ThirdLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ForthLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/FifthLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/SixthLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/SeventhLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/EighthLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <TextView
+        android:id="@+id/ClsNum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/problem_menu"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondTop"
+        app:layout_constraintLeft_toLeftOf="@+id/TheLeft"
+        app:layout_constraintRight_toRightOf="@+id/SecondLeft"
+        app:layout_constraintTop_toTopOf="@+id/TheTop" />
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondTop"
+        app:layout_constraintLeft_toLeftOf="@+id/SecondLeft"
+        app:layout_constraintRight_toRightOf="@+id/ThirdLeft"
+        app:layout_constraintTop_toTopOf="@+id/TheTop" />
+
+    <LinearLayout
+        android:id="@+id/inform"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondTop"
+        app:layout_constraintLeft_toLeftOf="@+id/ThirdLeft"
+        app:layout_constraintRight_toRightOf="@+id/SixthLeft"
+        app:layout_constraintTop_toTopOf="@+id/TheTop">
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/ScrollProblems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/SeventhTop"
+        app:layout_constraintLeft_toLeftOf="@+id/SecondLeft"
+        app:layout_constraintRight_toRightOf="@+id/SeventhLeft"
+        app:layout_constraintTop_toTopOf="@+id/ThirdTop">
+
+        <LinearLayout
+            android:id="@+id/Layout_Problems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <!-->
+        android:background="#ffffaa"
+        android:background="#ffaaff"<-->
+        <!-->programmatically add view right here <-->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/Back"
+        android:background="@drawable/orange_button"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/TenthTop"
+        app:layout_constraintLeft_toLeftOf="@+id/ForthLeft"
+        app:layout_constraintRight_toRightOf="@+id/FifthLeft"
+        app:layout_constraintTop_toTopOf="@+id/NinethTop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ForthTop"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/SeventhLeft"
+        app:layout_constraintRight_toRightOf="@+id/EighthLeft"
+        app:layout_constraintTop_toBottomOf="@+id/ThirdTop">
+
+        <ListView
+            android:id="@+id/PL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
